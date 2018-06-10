@@ -1,4 +1,7 @@
 # Booglan Lisguistic Analyse
+[![codecov](https://codecov.io/gh/lucasgomide/booglan/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgomide/booglan)
+
+[![Build Status](https://travis-ci.org/lucasgomide/booglan.svg?branch=master)](https://travis-ci.org/lucasgomide/booglan)
 
 This tools has been developed to help some teachers to teach and to analyse some fundamental characteristics of the mysterious Booglan language.
 
