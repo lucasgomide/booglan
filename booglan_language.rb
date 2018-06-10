@@ -28,6 +28,6 @@ class BooglanLanguage
 
   private
   def error_message
-    "Usage: ruby booglan_language.rb <action> <text>\n\nSome useful booblang actions are: preposition, order_words or verb"
+    "\nUsage: ruby main.rb <analysis_type> <text>\n\n--------COMMANDS DESCRIPTIONS--------\n\n- analysis_type means the type of analisies.Three kinds of analysis \nhave been developed. They are: verb, preposition and order_words\n\n- text means the text in Booglan to be analised."
   end
 end

@@ -22,23 +22,21 @@ class BooglanLanguageTest < Test::Unit::TestCase
 
   SAMPLE_TEXT = 'hnh fcxm jkd bxwkd gzq wmhxmmjg lvnfj sbbszwrh jvvzgr wjjkbjn bhhfwgn mxdwmx pbfwwvph mfh ncnw zkbx xkwdbdt fngmrcts mzntdhv hsvmlv scgkccbc nhtbksv sjcg gllhcp'.freeze
 
-  PARAMS_ERROR = "Usage: ruby booglan_language.rb <action> <text>\n" +
-  "\n" +
-  "Some useful booblang actions are: preposition, order_words or verb".freeze
+  EXPECTED_ERROR = "\nUsage: ruby main.rb <analysis_type> <text>\n\n--------COMMANDS DESCRIPTIONS--------\n\n- analysis_type means the type of analisies.Three kinds of analysis \nhave been developed. They are: verb, preposition and order_words\n\n- text means the text in Booglan to be analised.".freeze
 
   def test_nil_paramenters
     result = BooglanLanguage.new.perform(nil, nil)
-    assert_equal PARAMS_ERROR, result
+    assert_equal EXPECTED_ERROR, result
   end
 
   def test_paramenters_unknown_action
     result = BooglanLanguage.new.perform('unknown', nil)
-    assert_equal PARAMS_ERROR, result
+    assert_equal EXPECTED_ERROR, result
   end
 
   def test_paramenters_text_nil
     result = BooglanLanguage.new.perform('verb', nil)
-    assert_equal PARAMS_ERROR, result
+    assert_equal EXPECTED_ERROR, result
   end
 
   def test_verb_analysis
