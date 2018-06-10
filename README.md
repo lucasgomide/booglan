@@ -76,4 +76,4 @@ RESULT: thh tjnd wtf wjjkbjn wmhxmmjg hkvgnn hnh hsff hsvmlv zkbx kdrqdp kbvkhct
 
 The test suit is really simple, all of them are inside `/test/unit/*`.
 
-The command to run them is `ruby -Itest test/unit/run.rb`
+The command to run them is `bundle exec rake test`
