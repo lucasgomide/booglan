@@ -8,10 +8,22 @@ This tool has been developed to help some teachers to teach and to analyse some 
 ## Requirements
 
 Ruby >= 2.3
+**OR**
+Docker
 
 ## Install
 
 `bundle exec install`
+
+**If you prefer run it using docker** just run these commands bellow
+
+To build the app
+
+`docker build -t booglan-analyse .`
+
+To run the command to analyse Booglan language
+
+`docker run -it --rm --name booglan-analyse -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.4 ruby main.rb preposition "TEXT HERE"`
 
 ## Usage
 
@@ -77,3 +89,7 @@ RESULT: thh tjnd wtf wjjkbjn wmhxmmjg hkvgnn hnh hsff hsvmlv zkbx kdrqdp kbvkhct
 The test suit is really simple, all of them are inside `/test/unit/*`.
 
 The command to run them is `bundle exec rake test`
+
+**If you prefer run it using docker** just run the command above
+
+`docker run -it --rm --name booglan-analyse -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.4 bundle install; bundle exec rake test`
