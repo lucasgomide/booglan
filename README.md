@@ -35,7 +35,7 @@ ruby main.rb <analysis_type> <text>
 
 As you can see above.. easy piece. You have to put `ruby main.rb` followed by the analisis type and the text to be analised on your terminal. We're going to see the attributes' description.
 
-**analysis_type** means the type of analisies. Three kinds of analysis have been developed. They are *verb*, *preposition* and *order_words*.
+**analysis_type** means the type of analisies. Four kinds of analysis have been developed. They are *verb*, *preposition*, *order_words* and *pretty_numbers*.
 
 **text** means the text in Booglan to be analised.
 
@@ -81,6 +81,21 @@ The expected result is
 ```text
 -----------------------------------------------------
 RESULT: thh tjnd wtf wjjkbjn wmhxmmjg hkvgnn hnh hsff hsvmlv zkbx kdrqdp kbvkhct dzdfg dfztff dxrxrhwv fkf fvvsrw fcxm fngmrcts fmmrwn cftt crpmz jtpxn jkd jkn jfcv jvvzgr jccxzzkj jqkxw jbxr xwkxr xkwdbdt ldssvhhr lvnfj rtpffmcf rqdrrttj rqvnt nhtbksv ncnw nxprpq qddnj qjk qrf qqgcx qsxfl qbhgfjc mzntdhv mfh mxdwmx gtwdzvbd gtnmldrf gzq gllhcp grlqvpr ggvfqgl gpwxfgd gbgfsj pwz pzxvb pdkphhrn pbfwwvph swrbr szdwqjn scntx scgkccbc sjcg sskdpzk sbbszwrh bhhfwgn bcnfbb bxwkd bbrmrr
+-----------------------------------------------------
+```
+
+#### How to use "Pretty Numbers Analysis"
+
+```shell
+ruby main.rb pretty_numbers "hnh fcxm jkd bxwkd gzq wmhxmmjg lvnfj sbbszwrh jvvzgr wjjkbjn bhhfwgn mxdwmx pbfwwvph mfh ncnw zkbx xkwdbdt fngmrcts mzntdhv hsvmlv scgkccbc nhtbksv sjcg gllhcp jqkxw szdwqjn kbvkhct jkn bbrmrr qrf qsxfl dzdfg jccxzzkj rqdrrttj fmmrwn kdrqdp hkvgnn fkf swrbr tjnd qjk rqvnt thh qbhgfjc gbgfsj dxrxrhwv ldssvhhr sskdpzk hsff gtwdzvbd scntx wtf fvvsrw gpwxfgd rtpffmcf bcnfbb gtnmldrf dfztff nxprpq crpmz grlqvpr pzxvb jfcv pwz xwkxr ggvfqgl qqgcx jtpxn qddnj pdkphhrn cftt jbxrl xkqxcwpm xmfb fzphplvn gcksvmk jhxtm mdjwn zpslsgr vjjttfb cbsnch pgjwwdjh crp tmjzvn bqvn jhhfbd hthpzcq ltnpw wtffzw kjhpkc mnmqt mdvvc qjqdpwdh vktglnvt dmkvqc zblsrsqb crrkmcb fvh hqcv rgbpwbf wfv hgq grbrpfk ddjbq lqnnk frzxbzb phd fdrbn hbxlb wvbnq mhq whtpldh djx tzdrgpm csdqcl bgpc kdsgjhp ljbqg pgllk sblhr jzsbq vrwnspc zrhpwck htqlk lll pqjjjx"
+```
+
+**Output**
+The expected result is
+
+```text
+-----------------------------------------------------
+RESULT: This text has 28 pretty numbers
 -----------------------------------------------------
 ```
 
