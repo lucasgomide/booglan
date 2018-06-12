@@ -19,6 +19,7 @@ module Booglan
 
       qnt_pretty_number = text.split.map { |word| to_base_10(word) } # converting word (base 20) to base 10
                           .keep_if { |number| pretty_number?(number) } # keeping only pretty numbers from all of converted numbers
+                          .uniq # Removing duplicates pretty numbers
                           .count # counting how many pretty number there are
 
       message(qnt_pretty_number)
