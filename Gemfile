@@ -9,3 +9,4 @@ end
 
 gem 'rake'
 gem 'test-unit'
+gem 'pry'
